@@ -1,0 +1,476 @@
+/* Selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #09080D;
+  color: #E0E0E0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+#banner {
+  width: 100%;
+  padding: 40px 0px;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 60%;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: hsl(20, 100%, 99%);
+  font-size: 25px;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: rgb(255, 253, 252);
+  display: block;
+}
+
+.menu .navbar ul li a:hover {
+  color: #b8975c;
+}
+
+.header-txt {
+  width: 50%;
+}
+
+.header-txt h1 {
+  font-size: clamp(50px, 10vw, 105px); /* Clamp para hacer el tamaño del texto responsivo */
+  line-height: clamp(50px, 10vw, 110px); /* Clamp para el line-height */
+  color: #fefcfb;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.header-txt p {
+  font-size: clamp(14px, 2vw, 16px); /* Clamp para párrafo */
+  color: #E0E0E0;
+  margin-bottom: 15px;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 11px 45px;
+  background-color: #B7975B;
+  color: #FEFCFB;
+  border-radius: 25px;
+  font-size: 22px;
+}
+
+.btn-1:hover {
+  background-color: #A08450;
+}
+
+.direction {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+
+.direction p {
+  color: #FEFCFB;
+  font-size: 16px;
+}
+
+/* ---------NOSOTROS-------- */
+
+.about {
+  padding: 100px 0px;
+  display: flex;
+  flex-wrap: wrap; /* Para adaptarse a pantallas pequeñas */
+}
+
+.about-txt {
+  width: 50%;
+  padding-top: 100px;
+}
+
+.about-img {
+  width: 50%;
+}
+
+.about-img img {
+  width: 450px;
+  max-width: 100%; /* Para imágenes responsivas */
+}
+
+h2 {
+  font-size: clamp(30px, 7vw, 70px); /* Clamp para hacer el título responsivo */
+  color: #FEFCFB;
+  margin-bottom: 15px;
+}
+
+.about-txt p {
+  font-size: clamp(14px, 2vw, 16px);
+  color: #E0E0E0;
+  margin-bottom: 35px;
+}
+
+section > p:first-child {
+  font-size: 30px;
+  color: #E0E0E0;
+}
+
+section > p:nth-child(2) {
+  font-size: 30px;
+  color: #b8975c;
+  cursor: pointer;
+}
+
+/* ABAJO */
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0px;
+  flex-wrap: wrap;
+}
+
+.information-1 {
+  display: flex;
+  align-items: center;
+}
+
+.information-1 h3 {
+  font-size: clamp(30px, 7vw, 70px); /* Clamp para título responsivo */
+  color: #FEFCFB;
+}
+
+.information-1 p {
+  font-size: clamp(12px, 2vw, 16px); /* Clamp para párrafo */
+  color: #E0E0E0;
+  margin-left: 15px;
+}
+
+/* ------------producto----------- */
+
+.Product {
+  display: grid; /* Usamos Grid para organizar las columnas */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  box-sizing: border-box;
+}
+
+.house-1, .house-2, .house-3, .house-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.house-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/i1.jpg);
+}
+
+.house-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/i2.jpg);
+}
+
+.house-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/i3.jpg);
+}
+
+.house-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/i5.jpg);
+}
+
+/* Texto en Productos */
+.txt {
+  position: relative;
+}
+
+.txt span {
+  color: #B7975B;
+  font-size: 35px;
+}
+
+.txt h3 {
+  color: #FEFCFB;
+  font-size: clamp(20px, 5vw, 35px); /* Clamp para hacer el texto responsivo */
+}
+
+.txt p {
+  font-size: 16px;
+  color: #E0E0E0;
+  position: absolute;
+  top: 400px;
+  left: 0;
+  rotate: 270deg;
+}
+
+/* --------------------------contact---------------------- */
+
+.contact {
+  padding: 100px 0 0 0;
+  align-items: center;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  width: 50%;
+  padding-top: 45px;
+}
+
+.contact-txt {
+  width: 50%;
+  padding-left: 20px;
+  text-align: center;
+}
+
+input[type="text"] {
+  background-color: #393737;
+}
+
+.contact-form h2{
+  padding-left: 120px;
+}
+form {
+  display: flex;
+  width: 350px;
+  flex-direction: column;
+  margin-left: 100px;
+}
+
+.campo {
+  background-color: #201F23;
+  padding: 17px 35px;
+  outline: none;
+  color: #7E7E7E;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+.campo::placeholder {
+  color: #7E7E7E;
+}
+
+.btn-2 {
+  padding: 17px 35px;
+  border: 2px solid #b7975b;
+  background-color: #B7975B;
+  color: #FEFCFB;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+
+.btn-2:hover {
+  background-color: #A08450;
+}
+
+.btn-2:active {
+  color: #09080D;
+  background-color: bisque;
+}
+
+.contact-txt h3 {  
+  color: #FEFCFB;
+  font-size: clamp(20px, 5vw, 35px); /* Clamp para hacer el texto responsivo */
+  margin: 0 0px 20px 0;  
+}
+
+.contact-txt p {
+  margin-bottom: 25px;
+  font-size: clamp(14px, 2vw, 18px); 
+  color: #E0E0E0;
+}
+
+.footer {
+  margin-top: 80px;
+  padding-bottom: 50px;
+}
+.footer p{
+align-items: center;
+text-align: center;
+}
+
+section > p:last-child {
+  font-size: clamp(15px, 4vw, 30px);
+  color: #E0E0E0;
+}
+
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer ul li {
+  margin-right: 20px;
+}
+
+.footer ul li a {
+  font-size: 20px;
+  color: #b8975c;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #181818;
+    color: #f5f5f5;
+  }
+  .about-txt p, .information-1 p {
+    color: #f5f5f5;
+  }
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+
+  .header-txt, .about-txt, .about-img, .contact-form, .contact-txt {
+    width: 100%;
+    padding: 0; 
+    text-align: center;
+  }
+
+  .header-txt {
+    padding-top: 40px;
+  }
+
+  .header-txt h1 {
+    font-size: clamp(30px, 8vw, 80px);
+  }
+
+  .header-txt p {
+    padding-bottom: 25px;
+  }
+
+  .header {
+    min-height: 60vh;
+  }
+
+  .about {
+    padding-top: 0px;
+  }
+
+  .about-img img {
+    width: 100%; /* Imagen se adapta completamente */
+  }
+
+  .menu {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  #banner {
+    width: 100%;
+    padding: 55px 0px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 60%;
+  }
+
+  .menu .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu .navbar ul li a {
+    padding: 10px; /* Reducir padding en móviles */
+  }
+
+  .direction, .information {
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .btn-1 {
+    font-size: 18px; /* Ajustar el tamaño del botón */
+  }
+
+  form {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contact-form h2 {
+    padding-left: 0;
+  }
+
+  .contact-form {
+    display: block;
+  }
+
+  .contact-txt{
+    padding-top: 80px;
+    display: block;    
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Product {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajustar para pantallas pequeñas */
+  }
+
+  .house-1, .house-2, .house-3, .house-4 {
+    height: 300px;
+  }
+
+  .txt p { /* ------------------------------------------------------*/
+    top: auto; /* Elimina la posición superior en pantallas pequeñas */
+    left: 26%; /* Centra el texto horizontalmente */
+    transform: translateX(-50%); /* Ajusta el desplazamiento horizontal */
+    rotate: 0deg; /* Quita la rotación */
+    bottom: 10px; /* Ajusta la distancia al fondo del contenedor */
+  }
+}
+
